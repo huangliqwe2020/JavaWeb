@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="unnamed">
+    <output-path>$PROJECT_DIR$/out/artifacts/unnamed</output-path>
+    <root id="archive" name="unnamed.war">
+      <element id="javaee-facet-resources" facet="bishe/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="bishe" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="jstl-1.1.2.jar" module-name="bishe" />
+          <element id="library" level="module" name="standard-1.1.2-sources.jar" module-name="bishe" />
+          <element id="library" level="module" name="standard.jar" module-name="bishe" />
+          <element id="library" level="module" name="jstl.jar" module-name="bishe" />
+          <element id="library" level="module" name="mysql-connector-java-5.1.8-bin.jar" module-name="bishe" />
+          <element id="library" level="module" name="mysql-connector-java-8.0.15.jar" module-name="bishe" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

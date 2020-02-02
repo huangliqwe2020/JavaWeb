@@ -15,12 +15,8 @@ import javax.servlet.http.HttpServletResponse;
 
 
 
-import com.dao.DUserDao;
-//import com.dao.DUserDaoImpl;
-import com.dao.UserDao;
-import com.dao.UserDaoImpl;
-import com.entity.Caa;
-import com.entity.User;
+
+
  
 public class Searchall extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)

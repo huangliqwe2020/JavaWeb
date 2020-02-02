@@ -92,7 +92,7 @@ for(int i=0;i< us.xiala(list,table).size();i++){
     <td>
      <h3>请选出你想在表</h3>
      <form action="DeleteServlet"method="post">
-     <input type="text" value="<%=table%>" name="name2"><h3>中删除的一行数据，以及其对应的主键</h3><br>
+     <input type="text" value="<%=table%>" name="tablenam"><h3>中删除的一行数据，以及其对应的主键</h3><br>
      主键是名称:<input type="text" name="key"><br>
      主键值是:<input type="text" name="keyvalue"><br>
      <input type="submit" value="删除">
@@ -102,7 +102,7 @@ for(int i=0;i< us.xiala(list,table).size();i++){
      <td>
       <h3>请输入你想在表</h3>
      <form action="UpdateServlet"method="post">
-     <input type="text" value="<%=table%>" name="name2"><h3>中改变的数据，填写相关数据以便插入</h3><br>
+     <input type="text" value="<%=table%>" name="tablenam"><h3>中改变的数据，填写相关数据以便插入</h3><br>
      主键是名称:<input type="text" name="key"><br>
      主键值是:<input type="text" name="keyvalue"><br>
      列名:<input type="text" name="shuxin"><br>

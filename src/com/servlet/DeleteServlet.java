@@ -23,13 +23,14 @@ public class DeleteServlet extends HttpServlet {
 			throws ServletException, IOException {
 		
 		String id = request.getParameter("id");
+		String tablenam=request.getParameter("tablenam");
 		int userId = Integer.parseInt(id);
 		
 		UserDao ud = new UserDaoImpl();
 	
-		if(ud.delete(userId)){
-			request.setAttribute("xiaoxi", "É¾³ý³É¹¦");
-			request.getRequestDispatcher("/Searchall").forward(request, response);
+		if(ud.delete(tablenam,userId)){
+			request.setAttribute("xiaoxi", "É¾ï¿½ï¿½ï¿½É¹ï¿½");
+			request.getRequestDispatcher("/showall.jsp").forward(request, response);
 		}else{
 			response.sendRedirect("index.jsp");
 		}
