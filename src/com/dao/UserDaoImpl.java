@@ -124,10 +124,10 @@ return qwe;
 		DBconn.closeConn();
 		return flag;
 	}
-	public boolean delete(String tablenam ,int id) {
+	public boolean delete(String tablenam ,String key,int id) {
 		boolean flag = false;
 		DBconn.init();
-		String sql = "delete  from "+tablenam+" where id="+id;
+		String sql = "delete  from user where id="+id;
 		int i =DBconn.addUpdDel(sql);
 		if(i>0){
 			flag = true;

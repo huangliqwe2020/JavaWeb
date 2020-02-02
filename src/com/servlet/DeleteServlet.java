@@ -22,13 +22,15 @@ public class DeleteServlet extends HttpServlet {
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
-		String id = request.getParameter("id");
+		String id = request.getParameter("keyvalue");
 		String tablenam=request.getParameter("tablenam");
+		String key=request.getParameter("key");
 		int userId = Integer.parseInt(id);
+
 		
 		UserDao ud = new UserDaoImpl();
 	
-		if(ud.delete(tablenam,userId)){
+		if(ud.delete(tablenam,key,userId)){
 			request.setAttribute("xiaoxi", "ɾ���ɹ�");
 			request.getRequestDispatcher("/showall.jsp").forward(request, response);
 		}else{
